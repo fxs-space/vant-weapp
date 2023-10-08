@@ -16,20 +16,24 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     
+    
     <script>
-      var _hmt = _hmt || [];
-      (function () {
-        var hm = document.createElement('script');
-        hm.src = 'https://hm.baidu.com/hm.js?af5d41bc4e446e76665dbe3ec18d55c3';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
+      // avoid to load analytics in iframe
+      if (window.top === window) {
+        var _hmt = _hmt || [];
+        (function () {
+          var hm = document.createElement('script');
+          hm.src = 'https://hm.baidu.com/hm.js?af5d41bc4e446e76665dbe3ec18d55c3';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
     </script>
     
-    <script type="module" crossorigin src="/vant-weapp/assets/main.3ff92753.js"></script>
+    <script type="module" crossorigin src="/vant-weapp/assets/mobile.3067a091.js"></script>
     <link rel="modulepreload" href="/vant-weapp/assets/vue-libs.1ccdd11c.js">
     <link rel="modulepreload" href="/vant-weapp/assets/iframe-router.173914a6.js">
-    <link rel="stylesheet" href="/vant-weapp/assets/main.a6b74c46.css">
+    <link rel="stylesheet" href="/vant-weapp/assets/mobile.21b768a1.css">
   </head>
   <body ontouchstart>
     <div id="app"></div>
